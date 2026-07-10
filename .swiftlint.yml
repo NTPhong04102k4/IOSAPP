@@ -1,0 +1,55 @@
+# SwiftLint configuration for AppIos
+# Docs: https://github.com/realm/SwiftLint
+
+included:
+  - AppIos
+  - Components
+  - Core
+  - Extensions
+  - Helpers
+  - Services
+
+excluded:
+  - .build
+  - build
+  - DerivedData
+  - PreviewContent
+  - "**/*.generated.swift"
+
+disabled_rules:
+  - todo
+  - trailing_comma
+
+opt_in_rules:
+  - empty_count
+  - empty_string
+  - closure_spacing
+  - contains_over_first_not_nil
+  - first_where
+  - sorted_imports
+  - vertical_whitespace_closing_braces
+
+analyzer_rules:
+  - unused_import
+
+line_length:
+  warning: 120
+  error: 200
+  ignores_comments: true
+  ignores_urls: true
+
+identifier_name:
+  min_length: 2
+  excluded:
+    - id
+    - x
+    - y
+
+type_name:
+  max_length:
+    warning: 45
+    error: 60
+
+function_body_length:
+  warning: 60
+  error: 120

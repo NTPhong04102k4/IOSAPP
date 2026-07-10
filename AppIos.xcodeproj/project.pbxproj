@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		F125BB1D2FFFB9E300380881 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F125BB1E2FFFB9F800380881 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		F125BB1F2FFFBA0800380881 /* Untitled.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Untitled.swift; sourceTree = "<group>"; };
+		F125BB202FFFBA0800380881 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		F125BB212FFFBA1F00380881 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		F125BB222FFFBA2800380881 /* LocalDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDatabase.swift; sourceTree = "<group>"; };
+		F14E16E330008A8900754801 /* AuthUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthUser.swift; sourceTree = "<group>"; };
+		F14E16E430008A9900754801 /* AuthViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModal.swift; sourceTree = "<group>"; };
+		F14E16E530008AA200754801 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F1B050A32FFE3A36002DB40F /* AppIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CCDE3330010ABE006654BF /* Light.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Light.swift; sourceTree = "<group>"; };
+		F1CCDE3530010ADF006654BF /* Dark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dark.swift; sourceTree = "<group>"; };
+		F1CCDE3630010B58006654BF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -29,9 +41,132 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F125BB0F2FFFB8FC00380881 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F125BB102FFFB91C00380881 /* Authentication */,
+				F125BB182FFFB99600380881 /* Home */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F125BB102FFFB91C00380881 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				F125BB132FFFB94C00380881 /* Models */,
+				F125BB122FFFB94300380881 /* ViewModels */,
+				F125BB112FFFB93800380881 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		F125BB112FFFB93800380881 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F14E16E530008AA200754801 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F125BB122FFFB94300380881 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F14E16E430008A9900754801 /* AuthViewModal.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F125BB132FFFB94C00380881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F14E16E330008A8900754801 /* AuthUser.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F125BB152FFFB99600380881 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F125BB162FFFB99600380881 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F125BB172FFFB99600380881 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F125BB182FFFB99600380881 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F125BB152FFFB99600380881 /* Models */,
+				F125BB162FFFB99600380881 /* ViewModels */,
+				F125BB172FFFB99600380881 /* Views */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F125BB192FFFB9AC00380881 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F125BB222FFFBA2800380881 /* LocalDatabase.swift */,
+				F125BB212FFFBA1F00380881 /* APIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F125BB1A2FFFB9B600380881 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F125BB202FFFBA0800380881 /* CustomButton.swift */,
+				F125BB1F2FFFBA0800380881 /* Untitled.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F125BB1B2FFFB9BF00380881 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F1CCDE3630010B58006654BF /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F125BB1C2FFFB9C700380881 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F1CCDE3430010AC7006654BF /* Theme */,
+				F125BB1E2FFFB9F800380881 /* DateFormatter.swift */,
+				F125BB1D2FFFB9E300380881 /* Constants.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F125BB232FFFBA3900380881 /* PreviewContent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PreviewContent;
+			sourceTree = "<group>";
+		};
 		F1B0509A2FFE3A36002DB40F = {
 			isa = PBXGroup;
 			children = (
+				F125BB232FFFBA3900380881 /* PreviewContent */,
+				F125BB1C2FFFB9C700380881 /* Helpers */,
+				F125BB1B2FFFB9BF00380881 /* Extensions */,
+				F125BB1A2FFFB9B600380881 /* Components */,
+				F125BB192FFFB9AC00380881 /* Services */,
+				F125BB0F2FFFB8FC00380881 /* Core */,
 				F1B050A52FFE3A36002DB40F /* AppIos */,
 				F1B050A42FFE3A36002DB40F /* Products */,
 			);
@@ -43,6 +178,15 @@
 				F1B050A32FFE3A36002DB40F /* AppIos.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F1CCDE3430010AC7006654BF /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				F1CCDE3530010ADF006654BF /* Dark.swift */,
+				F1CCDE3330010ABE006654BF /* Light.swift */,
+			);
+			path = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q46JHXQ6LA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -282,6 +427,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = Q46JHXQ6LA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
