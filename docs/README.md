@@ -33,6 +33,7 @@ Xem chi tiết tại **[swift/README.md](swift/README.md)**.
 
 | # | Chủ đề | Component chính |
 |---|--------|-----------------|
+| 00 | [iOS nền tảng](00-ios-nen-tang.md) | **UIKit vs SwiftUI**, **AppDelegate** vs `App` lifecycle, `ObservableObject` (bối cảnh — nên đọc trước) |
 | 01 | [Text](01-text.md) | `Text` — hiển thị chữ, định dạng, style |
 | 02 | [Button](02-button.md) | `Button` — nút bấm, action, style |
 | 03 | [TextField](03-textfield.md) | `TextField`, `SecureField`, `TextEditor` — nhập liệu |
@@ -44,7 +45,7 @@ Xem chi tiết tại **[swift/README.md](swift/README.md)**.
 
 ## Cách học hiệu quả
 
-1. Đọc từng file theo thứ tự (01 → 08).
+1. Đọc từng file theo thứ tự (00 → 08).
 2. Copy đoạn code vào 1 file `.swift` mới trong Xcode.
 3. Bấm **Resume** ở khung Preview bên phải để xem kết quả.
 4. Đổi thử tham số (màu, size, text...) để hiểu cách chúng ảnh hưởng UI.
